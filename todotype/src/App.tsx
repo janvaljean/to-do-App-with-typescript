@@ -1,10 +1,11 @@
 import { ChangeEvent, FC, useState } from "react";
 import "./App.css";
+import {todoType} from "./appTypes"
 
 const App: FC = () => {
   const [task, setTask] = useState<string>("");
   const [day, setDay] = useState<number>(0);
-  const [tasks, setTasks] = useState<Array<string>>([]);
+  const [tasks, setTasks] = useState<todoType[]>([]);
 
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
     const { value, name } = event.target;
@@ -15,6 +16,9 @@ const App: FC = () => {
     }
   };
   console.log(task,day)
+  const addNewTask = () =>{
+    const newTask 
+  }
  
 
   return (
@@ -34,7 +38,7 @@ const App: FC = () => {
           onChange={handleChange}
           name="day"
         />
-        <button >Add new Task</button>
+        <button onClick={addNewTask} >Add new Task</button>
       </div>
     </div>
   );
