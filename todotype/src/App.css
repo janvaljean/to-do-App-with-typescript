@@ -36,3 +36,50 @@
     transform: rotate(360deg);
   }
 }
+.inputContainer{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 20%;
+  margin: auto;
+  gap: 8px;
+  margin-top: 12px;
+}
+.inputContainer input{
+  border-radius: 12px;
+  padding: 10px;
+}
+.inputContainer button{
+  border-radius: 8px;
+  padding: 12px;
+  background-color: green;
+  color: white;
+  border: none;
+}
+
+.cardContainer{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  
+}
+.cards{
+  width: 350px;
+  height: 250px;
+  border: 1px solid green;
+  border-radius: 16px;
+  text-align: center;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+}
+.cards button{
+  padding: 12px;
+  border-radius: 12px;
+  background-color: red;
+  color: white;
+  border: none;
+}
